@@ -12,7 +12,6 @@ import { shades } from "../../theme";
 function Navbar() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const cart = useSelector((state) => state.cart.cart);
 
   return (
     <Box
@@ -58,7 +57,7 @@ function Navbar() {
           <IconButton sx={{ color: "black" }}>
             <ShoppingBagOutlined />
           </IconButton>
-          
+
           <IconButton sx={{ color: "black" }}>
             <MenuOutlined />
           </IconButton>
