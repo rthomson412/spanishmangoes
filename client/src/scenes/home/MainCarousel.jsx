@@ -80,8 +80,8 @@ const MainCarousel = () => {
             margin={isNonMobile ? undefined : "0 auto"}
             maxWidth={isNonMobile ? undefined : "240px"}
           >
-            <Typography color={shades.secondary[200]}>- Spanish Mangoes</Typography>
-            <Typography variant="h1">Always Fresh</Typography>
+            <Typography color={shades.secondary[200]}>- Always Fresh</Typography>
+            <Typography variant="h1">Spanish Mangoes</Typography>
             <Typography
               fontWeight="bold"
               color={shades.secondary[300]}
