@@ -19,7 +19,7 @@ function Footer() {
       >
         <Box width="clamp(20%, 30%, 40%)">
           <Typography
-            variant="h2"
+            variant="h3"
             fontWeight="bold"
             mb="30px"
             color={shades.secondary[500]}
@@ -35,7 +35,7 @@ function Footer() {
         </Box>
 
         <Box>
-          <Typography variant="h2" fontWeight="bold" mb="30px">
+          <Typography variant="h3" fontWeight="bold" mb="30px">
             About Us
           </Typography>
           <Typography mb="30px">Careers</Typography>
@@ -45,7 +45,7 @@ function Footer() {
         </Box>
 
         <Box>
-          <Typography variant="h2" fontWeight="bold" mb="30px">
+          <Typography variant="h3" fontWeight="bold" mb="30px">
             Customer Care
           </Typography>
           <Typography mb="30px">Help Center</Typography>
@@ -55,7 +55,7 @@ function Footer() {
         </Box>
 
         <Box width="clamp(20%, 25%, 30%)">
-          <Typography variant="h2" fontWeight="bold" mb="30px">
+          <Typography variant="h3" fontWeight="bold" mb="30px">
             Contact Us
           </Typography>
           <Typography mb="30px">
