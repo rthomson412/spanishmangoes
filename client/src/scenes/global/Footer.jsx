@@ -28,7 +28,7 @@ function Footer() {
           </Typography>
           <div>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            eiusmod tempor incididunt ut labore et dolore.
           </div>
         </Box>
 
@@ -41,15 +41,7 @@ function Footer() {
           <Typography mb="30px">Privacy Policy</Typography>
         </Box>
 
-        <Box>
-          <Typography variant="h3" fontWeight="bold" mb="30px">
-            Customer Care
-          </Typography>
-          <Typography mb="30px">Track Your Order</Typography>
-          <Typography mb="30px">Corporate & Bulk Purchasing</Typography>
-          <Typography mb="30px">Returns & Refunds</Typography>
-        </Box>
-
+        
         <Box width="clamp(20%, 25%, 30%)">
           <Typography variant="h3" fontWeight="bold" mb="30px">
             Contact Us
@@ -62,6 +54,16 @@ function Footer() {
           </Typography>
           <Typography mb="30px">(222)333-4444</Typography>
         </Box>
+
+        <Box>
+          <Typography variant="h3" fontWeight="bold" mb="30px">
+            Customer Care
+          </Typography>
+          <Typography mb="30px">Track Your Order</Typography>
+          <Typography mb="30px">Corporate & Bulk Purchasing</Typography>
+          <Typography mb="30px">Returns & Refunds</Typography>
+        </Box>
+
       </Box>
     </Box>
   );
