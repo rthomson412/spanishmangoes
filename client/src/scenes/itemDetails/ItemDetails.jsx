@@ -36,7 +36,7 @@ const ItemDetails = () => {
 
   async function getItems() {
     const items = await fetch(
-      `http://localhost:2000/api/items?populate=image`,
+      `http://localhost:1337/api/items?populate=image`,
       {
         method: "GET",
       }
@@ -119,7 +119,7 @@ const ItemDetails = () => {
       </Box>
 
       {/* INFORMATION */}
-      {/* <Box m="20px 0">
+      <Box m="20px 0">
         <Tabs value={value} onChange={handleChange}>
           <Tab label="DESCRIPTION" value="description" />
           <Tab label="REVIEWS" value="reviews" />
@@ -130,10 +130,10 @@ const ItemDetails = () => {
           <div>{item?.attributes?.longDescription}</div>
         )}
         {value === "reviews" && <div>reviews</div>}
-      </Box> */}
+      </Box>
 
       {/* RELATED ITEMS */}
-      {/* <Box mt="50px" width="100%">
+      <Box mt="50px" width="100%">
         <Typography variant="h3" fontWeight="bold">
           Related Products
         </Typography>
@@ -148,7 +148,7 @@ const ItemDetails = () => {
             <Item key={`${item.name}-${i}`} item={item} />
           ))}
         </Box>
-      </Box> */}
+      </Box>
     </Box>
   );
 };
