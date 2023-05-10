@@ -59,17 +59,17 @@ const ItemDetails = () => {
             alt={item?.name}
             width="100%"
             height="100%"
-            src={`http://localhost:2000${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
+            src={`http://localhost:1337${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
             style={{ objectFit: "contain" }}
           />
         </Box>
 
         {/* ACTIONS */}
         <Box flex="1 1 50%" mb="40px">
-          <Box display="flex" justifyContent="space-between">
+          {/* <Box display="flex" justifyContent="space-between">
             <Box>Home/Item</Box>
             <Box>Prev Next</Box>
-          </Box>
+          </Box> */}
 
           <Box m="65px 0 25px 0">
             <Typography variant="h3">{item?.attributes?.name}</Typography>
@@ -113,13 +113,13 @@ const ItemDetails = () => {
               <FavoriteBorderOutlinedIcon />
               <Typography sx={{ ml: "5px" }}>ADD TO WISHLIST</Typography>
             </Box>
-            <Typography>CATEGORIES: {item?.attributes?.category}</Typography>
+            {/* <Typography>CATEGORIES: {item?.attributes?.category}</Typography> */}
           </Box>
         </Box>
       </Box>
 
       {/* INFORMATION */}
-      <Box m="20px 0">
+      {/* <Box m="20px 0">
         <Tabs value={value} onChange={handleChange}>
           <Tab label="DESCRIPTION" value="description" />
           <Tab label="REVIEWS" value="reviews" />
@@ -130,10 +130,10 @@ const ItemDetails = () => {
           <div>{item?.attributes?.longDescription}</div>
         )}
         {value === "reviews" && <div>reviews</div>}
-      </Box>
+      </Box> */}
 
       {/* RELATED ITEMS */}
-      <Box mt="50px" width="100%">
+      {/* <Box mt="50px" width="100%">
         <Typography variant="h3" fontWeight="bold">
           Related Products
         </Typography>
@@ -148,7 +148,7 @@ const ItemDetails = () => {
             <Item key={`${item.name}-${i}`} item={item} />
           ))}
         </Box>
-      </Box>
+      </Box> */}
     </Box>
   );
 };
