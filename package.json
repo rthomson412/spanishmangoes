@@ -4,6 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run start-client && npm run start-server",
+    "start-server": "cd server && npm run strapi develop",
+    "start-client": "cd client && npm start",
+    "build": "npm run build-server && npm run build-client",
+    "build-server": "cd server && npm run strapi build",
+    "build-client": "cd client && npm run build",
+    "deploy": "npm run deploy-server && npm run deploy-client",
+    "deploy-server": "cd server && npm run deploy",
+    "deploy-client": "cd client && npm run deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
